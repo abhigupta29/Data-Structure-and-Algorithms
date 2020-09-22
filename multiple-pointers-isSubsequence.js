@@ -1,5 +1,5 @@
 // Give two strings and check whether the characters in the first string form a subsequence
-// of the characters in the second string
+// of the characters in the second string 
 
 function isSubsequence(str1, str2){
     let i = 0, j = 0;
@@ -11,3 +11,6 @@ function isSubsequence(str1, str2){
     }
     return false;
 }
+
+isSubsequence('sing','sting') //true
+isSubsequence('abc','acb') //false (order matters)
