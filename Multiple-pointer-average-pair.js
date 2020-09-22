@@ -6,6 +6,13 @@ function averagePair(nums, avg) {
     let tail = nums.length-1;
     while(head<tail) {
         let average = (nums[head]+nums[tail])/2;
-        
+        if(average === avg) {
+            return true;
+        } else if(average < avg) {
+            head++;
+        }else {
+            tail--;
+        }
     }
+    return false;
 }
