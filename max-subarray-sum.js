@@ -12,3 +12,4 @@ function maxSubarraySum(arr, len) {
     return maxSum;
 }
 
+maxSubarraySum([100,200,300,400],2);  // 700
